@@ -123,8 +123,8 @@
 			});
 
 			await ffmpeg.load({
-				coreURL: await toBlobURL(`https://cdnjs.cloudflare.com/ajax/libs/ffmpeg-core/0.12.10/esm/ffmpeg-core.min.js`, 'text/javascript'),
-				wasmURL: await toBlobURL(`https://cdnjs.cloudflare.com/ajax/libs/ffmpeg-core/0.12.10/esm/ffmpeg-core.wasm`, 'application/wasm'),
+				coreURL: await toBlobURL(`https://cdn.jsdelivr.net/npm/@ffmpeg/core/dist/umd/ffmpeg-core.min.js`, 'text/javascript'),
+				wasmURL: await toBlobURL(`https://cdn.jsdelivr.net/npm/@ffmpeg/core/dist/umd/ffmpeg-core.wasm`, 'application/wasm'),
 				workerURL: await toBlobURL(`ffmpeg/ffmpeg-core.worker.js`, 'text/javascript')
 			});
 
